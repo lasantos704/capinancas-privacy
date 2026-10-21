@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Política de Privacidade do Capinanças — app de finanças pessoais 100% offline da Capivara Studios."
+    />
+    <title>Política de Privacidade — Capinanças</title>
+    <style>
+      :root {
+        --brand: #e17a2d;
+        --brand-dark: #c2621e;
+        --brand-soft: #fde6d2;
+        --cream: #fff7ed;
+        --ink: #221116;
+        --muted: #57534e;
+        --line: #e7e5e4;
+        --card: #ffffff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--cream);
+        color: var(--ink);
+        font-family:
+          'Nunito',
+          'Inter',
+          system-ui,
+          -apple-system,
+          'Segoe UI',
+          Roboto,
+          Helvetica,
+          Arial,
+          sans-serif;
+        line-height: 1.6;
+      }
+
+      a {
+        color: var(--brand-dark);
+      }
+
+      .wrap {
+        max-width: 780px;
+        margin: 0 auto;
+        padding: 32px 20px 56px;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 8px;
+      }
+
+      .mark {
+        width: 44px;
+        height: 44px;
+        border-radius: 14px;
+        background: var(--brand);
+        color: #fff;
+        display: grid;
+        place-items: center;
+        font-weight: 800;
+        font-size: 22px;
+        flex: none;
+      }
+
+      .brand {
+        font-size: 14px;
+        color: var(--muted);
+      }
+
+      h1 {
+        font-size: clamp(26px, 5vw, 34px);
+        line-height: 1.2;
+        margin: 18px 0 4px;
+      }
+
+      .updated {
+        color: var(--muted);
+        font-size: 14px;
+        margin: 0 0 18px;
+      }
+
+      .lang {
+        display: flex;
+        gap: 8px;
+        margin: 0 0 20px;
+      }
+
+      .lang button {
+        border: 1px solid var(--line);
+        background: var(--card);
+        color: var(--ink);
+        border-radius: 999px;
+        padding: 6px 14px;
+        font: inherit;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      .lang button[aria-pressed='true'] {
+        background: var(--brand);
+        border-color: var(--brand);
+        color: #fff;
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 22px 22px 8px;
+        box-shadow:
+          0 1px 2px rgba(124, 45, 18, 0.04),
+          0 8px 22px rgba(124, 45, 18, 0.05);
+      }
+
+      h2 {
+        font-size: 18px;
+        margin: 20px 0 6px;
+      }
+
+      p,
+      li {
+        color: var(--muted);
+        margin: 0 0 10px;
+      }
+
+      ul {
+        padding-left: 20px;
+        margin: 0 0 12px;
+      }
+
+      .pill {
+        display: inline-block;
+        background: var(--brand-soft);
+        color: var(--brand-dark);
+        border-radius: 999px;
+        padding: 3px 10px;
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      footer {
+        text-align: center;
+        color: var(--muted);
+        font-size: 13px;
+        margin-top: 28px;
+      }
+
+      [hidden] {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <header>
+        <div class="mark" aria-hidden="true">C</div>
+        <div>
+          <strong>Capinanças</strong><br />
+          <span class="brand">Capivara Studios</span>
+        </div>
+      </header>
+
+      <div class="lang" role="group" aria-label="Idioma / Language">
+        <button type="button" data-set-lang="pt-BR" aria-pressed="true">Português</button>
+        <button type="button" data-set-lang="en" aria-pressed="false">English</button>
+      </div>
+
+      <section data-lang="pt-BR">
+        <h1>Política de Privacidade</h1>
+        <p class="updated">Última atualização: 21/10/2026</p>
+
+        <div class="card">
+          <p>
+            O <strong>Capinanças</strong> é um aplicativo de finanças pessoais que funciona
+            <span class="pill">100% no seu aparelho</span>. Não há cadastro, login, servidores ou serviços de nuvem
+            operados por nós.
+          </p>
+
+          <h2>Dados armazenados</h2>
+          <p>
+            Lançamentos, contas, cartões, metas, orçamentos, recorrências, patrimônio, dívidas, renda sazonal,
+            configurações e comprovantes anexados. Tudo fica armazenado apenas localmente no dispositivo.
+          </p>
+
+          <h2>Coleta e compartilhamento</h2>
+          <p>
+            <strong>Não coletamos, não transmitimos e não compartilhamos</strong> seus dados pessoais. Não usamos
+            analytics, rastreamento ou publicidade.
+          </p>
+
+          <h2>Backup e exportação</h2>
+          <p>
+            Você pode exportar seus dados em JSON/CSV e compartilhá-los por onde quiser. Essa ação é iniciada por você.
+            O backup protegido por senha usa criptografia local (PBKDF2 + AES-256-GCM).
+          </p>
+
+          <h2>Notificações</h2>
+          <p>São locais, geradas no aparelho, para lembretes de faturas e recorrências. Nenhum servidor é usado.</p>
+
+          <h2>Exclusão de dados</h2>
+          <p>
+            Ao limpar os dados do app ou desinstalá-lo, os dados locais são removidos. Como não temos servidores, não há
+            dados nossos para excluir.
+          </p>
+
+          <h2>Contato</h2>
+          <p>
+            Dúvidas sobre privacidade: <a href="mailto:contato.capistudios@gmail.com">contato.capistudios@gmail.com</a>.
+          </p>
+        </div>
+      </section>
+
+      <section data-lang="en" hidden>
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated: October 21, 2026</p>
+
+        <div class="card">
+          <p>
+            <strong>Capinanças</strong> is a personal finance app that runs
+            <span class="pill">100% on your device</span>. There is no sign-up, login, server or cloud service operated
+            by us.
+          </p>
+
+          <h2>Data stored</h2>
+          <p>
+            Transactions, accounts, cards, goals, budgets, recurring entries, net worth, debts, seasonal income,
+            settings and attached receipts. Everything is stored locally on the device only.
+          </p>
+
+          <h2>Collection and sharing</h2>
+          <p>
+            <strong>We do not collect, transmit or share</strong> your personal data. We do not use analytics, tracking
+            or advertising.
+          </p>
+
+          <h2>Backup and export</h2>
+          <p>
+            You can export your data as JSON/CSV and share it wherever you want. This action is started by you.
+            Password-protected backups use local encryption (PBKDF2 + AES-256-GCM).
+          </p>
+
+          <h2>Notifications</h2>
+          <p>
+            Notifications are local, generated on the device, for invoice and recurring reminders. No server is used.
+          </p>
+
+          <h2>Data deletion</h2>
+          <p>
+            Clearing app data or uninstalling removes local data. Since we have no servers, there is no data of ours to
+            delete.
+          </p>
+
+          <h2>Contact</h2>
+          <p>Privacy questions: <a href="mailto:contato.capistudios@gmail.com">contato.capistudios@gmail.com</a>.</p>
+        </div>
+      </section>
+
+      <footer>Capinanças · Capivara Studios</footer>
+    </main>
+
+    <script>
+      (function () {
+        var buttons = document.querySelectorAll('[data-set-lang]');
+        var sections = document.querySelectorAll('[data-lang]');
+        function setLang(lang) {
+          document.documentElement.lang = lang === 'en' ? 'en' : 'pt-BR';
+          sections.forEach(function (el) {
+            el.hidden = el.getAttribute('data-lang') !== lang;
+          });
+          buttons.forEach(function (b) {
+            b.setAttribute('aria-pressed', String(b.getAttribute('data-set-lang') === lang));
+          });
+        }
+        buttons.forEach(function (b) {
+          b.addEventListener('click', function () {
+            setLang(b.getAttribute('data-set-lang'));
+          });
+        });
+        setLang('pt-BR');
+      })();
+    </script>
+  </body>
+</html>
