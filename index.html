@@ -29,7 +29,6 @@
         background: var(--cream);
         color: var(--ink);
         font-family:
-          'Nunito',
           'Inter',
           system-ui,
           -apple-system,
@@ -176,7 +175,7 @@
 
       <section data-lang="pt-BR">
         <h1>Política de Privacidade</h1>
-        <p class="updated">Última atualização: 21/10/2026</p>
+        <p class="updated">Última atualização: 27/10/2026</p>
 
         <div class="card">
           <p>
@@ -186,21 +185,65 @@
           </p>
 
           <h2>Dados armazenados</h2>
+          <p>Tudo o que você registra fica armazenado apenas localmente, no dispositivo:</p>
+          <ul>
+            <li>lançamentos, categorias e regras de categorização;</li>
+            <li>contas, cartões, faturas, compras parceladas (parcelamentos), dívidas e patrimônio;</li>
+            <li>
+              metas, orçamentos, recorrências, renda sazonal e o calendário do mês — que é apenas uma leitura dos
+              lançamentos já existentes, sem tabela própria;
+            </li>
+            <li>
+              comprovantes anexados (imagem copiada para o armazenamento privado do app, limite de 512 KB por anexo);
+            </li>
+            <li>
+              perfis de importação (as suas receitas de mapeamento de colunas), o selo do arquivo que originou cada
+              lançamento e as configurações do app.
+            </li>
+          </ul>
+
+          <h2>Importação de arquivos</h2>
           <p>
-            Lançamentos, contas, cartões, metas, orçamentos, recorrências, patrimônio, dívidas, renda sazonal,
-            configurações e comprovantes anexados. Tudo fica armazenado apenas localmente no dispositivo.
+            O app pode ler arquivos que <strong>você</strong> escolher — extrato bancário (OFX/QIF/CSV) ou backup JSON.
+            A leitura acontece no aparelho, pelo seletor de arquivos do próprio sistema, e o resultado é mostrado antes
+            de qualquer gravação. Nenhum arquivo é enviado para nós ou para terceiros, e nada é lido sem você escolher.
           </p>
 
           <h2>Coleta e compartilhamento</h2>
           <p>
             <strong>Não coletamos, não transmitimos e não compartilhamos</strong> seus dados pessoais. Não usamos
-            analytics, rastreamento ou publicidade.
+            analytics, rastreamento, publicidade nem SDK de relatório de falhas — nem mesmo telemetria anônima. Nenhuma
+            funcionalidade depende de servidor nosso.
           </p>
 
-          <h2>Backup e exportação</h2>
+          <h2>Backup, exportação e diagnóstico</h2>
           <p>
-            Você pode exportar seus dados em JSON/CSV e compartilhá-los por onde quiser. Essa ação é iniciada por você.
-            O backup protegido por senha usa criptografia local (PBKDF2 + AES-256-GCM).
+            Você pode exportar backup JSON (simples ou <strong>protegido por senha</strong>, com criptografia local
+            PBKDF2 + AES-256-GCM), CSV (normal e para Excel), o modelo de planilha, um exemplo e o relatório em PDF. Os
+            arquivos saem pelo compartilhamento do sistema, e a ação é sempre iniciada por você. Se uma leitura de dados
+            salvos falhar, o app oferece a exportação de um <strong>arquivo de diagnóstico</strong> com o conteúdo que
+            estava no aparelho, para que você mesmo analise ou envie a quem for ajudar; ele não é gerado nem enviado
+            automaticamente.
+          </p>
+
+          <h2>Bloqueio por biometria</h2>
+          <p>
+            O bloqueio do app é opcional. A verificação é feita pelo sistema, com a digital, o rosto ou o PIN do próprio
+            aparelho: não armazenamos biometria nem senha, e o app apenas recebe “deu certo / não deu”.
+          </p>
+
+          <h2>Permissões</h2>
+          <ul>
+            <li><strong>Biometria</strong> — só se você ativar o bloqueio;</li>
+            <li>
+              <strong>Fotos</strong> — só para anexar comprovantes: você escolhe a imagem no seletor do próprio sistema,
+              e o app não percorre o resto da sua galeria;
+            </li>
+            <li><strong>Notificações</strong> — só para os lembretes que você configurar.</li>
+          </ul>
+          <p>
+            O app não usa localização, não fotografa nem grava vídeo e não tem acesso livre aos arquivos do aparelho:
+            ele só lê o que você escolher.
           </p>
 
           <h2>Notificações</h2>
@@ -208,8 +251,9 @@
 
           <h2>Exclusão de dados</h2>
           <p>
-            Ao limpar os dados do app ou desinstalá-lo, os dados locais são removidos. Como não temos servidores, não há
-            dados nossos para excluir.
+            Ao limpar os dados do app ou desinstalá-lo, os dados locais são removidos — exporte um backup antes, se
+            quiser guardá-los. Como não temos servidores, não há dados nossos para excluir, e não existe solicitação de
+            cópia ou portabilidade para nós: a exportação é feita pelo próprio app.
           </p>
 
           <h2>Contato</h2>
@@ -221,7 +265,7 @@
 
       <section data-lang="en" hidden>
         <h1>Privacy Policy</h1>
-        <p class="updated">Last updated: October 21, 2026</p>
+        <p class="updated">Last updated: October 27, 2026</p>
 
         <div class="card">
           <p>
@@ -231,21 +275,61 @@
           </p>
 
           <h2>Data stored</h2>
+          <p>Everything you record is stored locally on the device only:</p>
+          <ul>
+            <li>transactions, categories and categorization rules;</li>
+            <li>accounts, cards, invoices, installment plans, debts and net worth;</li>
+            <li>
+              goals, budgets, recurring entries, seasonal income and the monthly calendar — which is only a reading of
+              the transactions you already have, with no table of its own;
+            </li>
+            <li>attached receipts (an image copied into the app's private storage, up to 512 KB per attachment);</li>
+            <li>
+              import profiles (your own column-mapping recipes), the file stamp that records which import produced each
+              transaction, and app settings.
+            </li>
+          </ul>
+
+          <h2>Reading files</h2>
           <p>
-            Transactions, accounts, cards, goals, budgets, recurring entries, net worth, debts, seasonal income,
-            settings and attached receipts. Everything is stored locally on the device only.
+            The app can read files <strong>you</strong> choose — a bank statement (OFX/QIF/CSV) or a JSON backup.
+            Reading happens on the device, through the system's own file picker, and the result is shown before anything
+            is saved. No file is sent to us or to any third party, and nothing is read unless you pick it.
           </p>
 
           <h2>Collection and sharing</h2>
           <p>
-            <strong>We do not collect, transmit or share</strong> your personal data. We do not use analytics, tracking
-            or advertising.
+            <strong>We do not collect, transmit or share</strong> your personal data. We do not use analytics, tracking,
+            advertising or crash-reporting SDKs — not even anonymous telemetry. No feature depends on a server of ours.
           </p>
 
-          <h2>Backup and export</h2>
+          <h2>Backup, export and diagnostics</h2>
           <p>
-            You can export your data as JSON/CSV and share it wherever you want. This action is started by you.
-            Password-protected backups use local encryption (PBKDF2 + AES-256-GCM).
+            You can export a JSON backup (plain or <strong>password-protected</strong>, using local PBKDF2 + AES-256-GCM
+            encryption), CSV (regular and Excel), the spreadsheet template, a sample file and the PDF report. Files
+            leave through the system share sheet, and the action is always started by you. If reading saved data fails,
+            the app offers a <strong>diagnostics</strong> file holding what was on the device, so you can inspect it or
+            send it to whoever helps you; it is never generated or sent automatically.
+          </p>
+
+          <h2>Biometric lock</h2>
+          <p>
+            Locking the app is optional. Verification is done by the operating system with your fingerprint, face or
+            device PIN: we store no biometric data and no password — the app only learns "it worked / it did not".
+          </p>
+
+          <h2>Permissions</h2>
+          <ul>
+            <li><strong>Biometrics</strong> — only if you turn the lock on;</li>
+            <li>
+              <strong>Photos</strong> — only to attach receipts: you pick the image in the system's own picker, and the
+              app does not scan the rest of your gallery;
+            </li>
+            <li><strong>Notifications</strong> — only for the reminders you set up.</li>
+          </ul>
+          <p>
+            The app does not use location, does not take photos or record video, and has no free access to the device's
+            files: it only reads what you choose.
           </p>
 
           <h2>Notifications</h2>
@@ -255,8 +339,9 @@
 
           <h2>Data deletion</h2>
           <p>
-            Clearing app data or uninstalling removes local data. Since we have no servers, there is no data of ours to
-            delete.
+            Clearing app data or uninstalling removes local data — export a backup first if you want to keep it. Since
+            we have no servers, there is no data of ours to delete, and no copy or portability request reaches us:
+            export is a feature of the app itself.
           </p>
 
           <h2>Contact</h2>
